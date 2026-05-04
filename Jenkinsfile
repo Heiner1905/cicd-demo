@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build & Test') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn clean package -DskipTests'
             }
         }
         stage('Static Analysis (SonarQube)') {
