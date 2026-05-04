@@ -12,6 +12,6 @@ public class ConfigController {
 
     @GetMapping("/config")
     public String config() {
-        return "Current profile "+name;
+        return "Current profile "+name + "test - Jenkins and Sonarqube";
     }
 }
